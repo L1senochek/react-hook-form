@@ -1,0 +1,30 @@
+.autocomplete-hook-uncontroled {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    padding: 5px 0;
+  }
+  &__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    padding: 5px;
+    color: #66fcf1ed;
+    border-radius: 5px;
+    border-color: #66fcf145;
+    border-width: 2px;
+    border-style: solid;
+    background: transparent;
+    padding-left: 5px;
+    outline: none;
+    &.error-input {
+      border-color: red;
+    }
+  }
+  &__option {
+    background-color: rgba(46, 46, 46);
+    border-color: #66fcf145;
+    color: #66fcf1ed;
+  }
+}

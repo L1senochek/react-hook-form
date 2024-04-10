@@ -1,0 +1,19 @@
+.submit-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    color: aqua;
+  }
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  &__form {
+    width: 35%;
+    &_title {
+      color: aqua;
+    }
+  }
+}

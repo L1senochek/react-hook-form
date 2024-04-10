@@ -1,0 +1,107 @@
+.react-hook-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #66fcf145;
+  background-color: rgb(46 46 46 / 45%);
+  padding: 15px;
+  &__label {
+    padding: 5px 0;
+  }
+  &__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    padding: 5px;
+    color: #66fcf1ed;
+    border-radius: 5px;
+    border-color: #66fcf145;
+    border-width: 2px;
+    border-style: solid;
+    background: transparent;
+    padding-left: 5px;
+    outline: none;
+  }
+  &__password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    padding: 5px;
+    color: #66fcf1ed;
+    border-radius: 5px;
+    border-color: #66fcf145;
+    border-width: 2px;
+    border-style: solid;
+    &_input {
+      width: 100%;
+      background: transparent;
+      color: #66fcf1ed;
+      padding-left: 5px;
+      border: none;
+      outline: none;
+    }
+    &_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      border: none;
+      background: transparent;
+      outline: none;
+      &:focus,
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    &.error-input {
+      border-color: red;
+    }
+  }
+  &__gender {
+    display: flex;
+    padding: 5px 0;
+    &_item {
+      display: flex;
+      & > input {
+        margin-top: 0;
+      }
+    }
+  }
+  &__img {
+    cursor: pointer;
+  }
+  &__submit {
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 10px;
+    color: #66fcf1ed;
+    border-radius: 5px;
+    border-color: #66fcf145;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #00242b;
+  }
+  &__error {
+    margin: 0;
+    height: 23px;
+    &_message {
+      color: red;
+    }
+  }
+  &__input.error-input {
+    border-color: red;
+  }
+}

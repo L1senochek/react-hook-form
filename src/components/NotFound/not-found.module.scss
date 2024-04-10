@@ -1,0 +1,15 @@
+@import '@/styles/variables.scss';
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  & > * {
+    padding: $not-found-padding;
+  }
+  &__btn {
+    margin: $not-found-padding;
+  }
+}

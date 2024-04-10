@@ -1,0 +1,66 @@
+.submit-card-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  border-color: #66fcf145;
+  border-width: 2px;
+  border-style: solid;
+  &.last-card {
+    border-color: #66fcf1ed;
+    color: #66fcf1ed;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+    &_title {
+      margin: 0;
+      padding-right: 10px;
+    }
+    &_arrow {
+      transform: rotate(90deg);
+      transition: transform 1s ease;
+    }
+    &_arrow::before {
+      content: '▲';
+    }
+    &.expanded &_arrow {
+      transform: rotate(180deg);
+      transition: transform 1s ease;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    &_wrapper-img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+    }
+    &_title {
+      margin: 0;
+    }
+    &_item {
+      margin: 0;
+      padding: 5px 0;
+      &.password {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & > * {
+          margin: 0;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
